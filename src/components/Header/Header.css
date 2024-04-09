@@ -1,0 +1,15 @@
+/* .navLink .active {
+    background-color: #fff;
+} */
+
+
+.menu li>*:not(ul, .menu-title, details, .btn):active,
+.menu li>*:not(ul, .menu-title, details, .btn).active,
+.menu li>details>summary:active {
+    --tw-bg-opacity: 1;
+    background-color: #fff;
+    --tw-text-opacity: 1;
+    color: #002366;
+    border: 1px solid #fff;
+    font-weight: 500;
+}

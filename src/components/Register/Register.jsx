@@ -1,19 +1,16 @@
 import React from 'react';
 import { Helmet } from "react-helmet";
 
-
-const Estates = () => {
+const Register = () => {
     return (
         <div>
             <Helmet>
-                <title>Abrar Estate | Estates</title>
+                <title>Abrar Estate | Register</title>
                 <meta name="description" content="Helmet application" />
             </Helmet>
-            <div>
-                <h1 className="text-3xl">Estates</h1>
-            </div>
+            <h1>Register</h1>
         </div>
     );
 };
 
-export default Estates;
+export default Register;

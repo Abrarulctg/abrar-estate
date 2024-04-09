@@ -1,16 +1,19 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import mainLogo from '../../assets/abrar-estate-main.png';
+import './Header.css';
 
 const Header = () => {
     const navLinks = <>
-        <NavLink to="/">Home</NavLink>
-        <NavLink to="/estates">Estates</NavLink>
-        <NavLink to="/about">About</NavLink>
-        <NavLink to="/contactUs">Contact Us</NavLink>
-        <NavLink to="/updateProfile">Updte Profile</NavLink>
+        <li><NavLink className="mr-4 text-white navLink" to="/">Home</NavLink></li>
+        <li><NavLink className="mr-4 text-white navLink" to="/estates">Estates</NavLink></li>
+        <li><NavLink className="mr-4 text-white navLink" to="/about">About</NavLink></li>
+        <li><NavLink className="mr-4 text-white navLink" to="/contactUs">Contact Us</NavLink></li>
+        <li><NavLink className="mr-4 text-white navLink" to="/userProfile">User Profile</NavLink></li>
+        <li><NavLink className="mr-4 text-white navLink" to="/updateProfile">Updte Profile</NavLink></li>
     </>
     return (
-        <div className="navbar bg-base-100">
+        <div className="navbar bg-[#002366]">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -20,25 +23,16 @@ const Header = () => {
                         {navLinks}
                     </ul>
                 </div>
-                <a className="btn btn-ghost text-xl">daisyUI</a>
+                {/* <a className="btn btn-ghost text-xl">Abrar Estate</a> */}
+                <img src={mainLogo} className='w-[200px]' alt="" />
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
-                    <li><a>Item 1</a></li>
-                    <li>
-                        <details>
-                            <summary>Parent</summary>
-                            <ul className="p-2">
-                                <li><a>Submenu 1</a></li>
-                                <li><a>Submenu 2</a></li>
-                            </ul>
-                        </details>
-                    </li>
-                    <li><a>Item 3</a></li>
+                    {navLinks}
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn">Button</a>
+                <NavLink to="/login" className="btn">Login</NavLink>
             </div>
         </div>
     );
