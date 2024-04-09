@@ -1,0 +1,143 @@
+[
+    {
+        "image_url": "https://i.ibb.co/tPqhRSj/Dhqc2m-Cv-address.jpg",
+        "estate_title": "Luxury Downtown Hotel",
+        "unique_id": "hotel123",
+        "segment_name": "Hotels",
+        "description": "Welcome to our luxury downtown hotel, where elegance meets comfort in every detail. Situated in the vibrant heart of the bustling city, our hotel stands as a beacon of sophistication amidst the urban landscape. Step into our grand lobby, where modern design elements blend seamlessly with timeless elegance, setting the stage for an unforgettable stay. Each of our meticulously appointed rooms and suites offers a sanctuary of tranquility, featuring plush furnishings, luxurious amenities, and breathtaking views of the city skyline. Indulge your palate with culinary delights crafted by our award-winning chefs at our signature restaurant, where every dish is a masterpiece of flavor and presentation. Immerse yourself in relaxation at our state-of-the-art spa, where expert therapists provide personalized treatments designed to rejuvenate the body and soul. Whether you're here for business or leisure, our hotel promises a truly exceptional experience that will leave you enchanted and inspired.",
+        "price": 200,
+        "status": "Rent",
+        "area": 3000,
+        "location": "Central Plaza, Metropolis",
+        "facilities": [
+            "Spa",
+            "Restaurant",
+            "Gym",
+            "Conference Rooms"
+        ],
+        "rating": 4.5
+    },
+    {
+        "image_url": "https://i.ibb.co/2FdxvTw/208470338.jpg",
+        "estate_title": "Seaside Resort & Spa",
+        "unique_id": "resort456",
+        "segment_name": "Resorts",
+        "description": "Welcome to our seaside resort and spa, where the rhythm of the ocean meets the harmony of luxury. Nestled on the pristine shores of Sunset Bay, our resort offers an idyllic retreat for discerning travelers seeking sanctuary and serenity. From the moment you arrive, you'll be enchanted by the breathtaking beauty that surrounds you – from the endless expanse of the azure sea to the golden sands that stretch as far as the eye can see. Our elegant accommodations are designed to elevate your stay to new heights of comfort and indulgence, with sumptuous furnishings, modern amenities, and private balconies that offer sweeping views of the ocean or lush tropical gardens. Embark on a culinary journey at our world-class restaurants, where expert chefs craft exquisite dishes inspired by the flavors of the Mediterranean and beyond. Indulge your senses at our luxurious spa, where a menu of holistic treatments and therapies awaits to rejuvenate and refresh mind, body, and spirit. Whether you're seeking adventure or relaxation, our resort offers the perfect blend of leisure and luxury for an unforgettable escape.",
+        "price": 500,
+        "status": "Rent",
+        "area": 5000,
+        "location": "Sunset Bay, Coastal City",
+        "facilities": [
+            "Private Beach",
+            "Infinity Pool",
+            "Spa",
+            "Fine Dining"
+        ],
+        "rating": 4.7
+    },
+    {
+        "image_url": "https://i.ibb.co/y4CT3CN/DCA-Carsland-Cozy-Cone5-scaled.jpg",
+        "estate_title": "Cozy Highway Motel",
+        "unique_id": "motel789",
+        "segment_name": "Motels",
+        "description": "Welcome to our cozy highway motel, your home away from home on the open road. Conveniently located at the bustling junction of Highways 1 and 2, our motel offers weary travelers a warm welcome and a restful retreat from the journey ahead. Step into our inviting lobby, where a crackling fire and a friendly smile await, promising comfort and hospitality at every turn. Our well-appointed rooms are designed with your comfort in mind, featuring plush bedding, modern amenities, and all the conveniences of home. Stay connected with complimentary Wi-Fi, catch up on your favorite shows on the flat-screen TV, or simply unwind and recharge for the road ahead. With ample parking and a 24/7 reception desk, we're here to ensure your stay is as seamless and stress-free as possible. Whether you're traveling for business or pleasure, our motel is your oasis on the open road, where comfort and convenience come standard.",
+        "price": 50,
+        "status": "Rent",
+        "area": 500,
+        "location": "Highway Junction, Crossroads Town",
+        "facilities": [
+            "Parking",
+            "Free Wi-Fi",
+            "24/7 Reception"
+        ],
+        "rating": 4.2
+    },
+    {
+        "image_url": "https://i.ibb.co/Yb0QJzv/images-2.jpg",
+        "estate_title": "Riverside Vacation Rental",
+        "unique_id": "rental101",
+        "segment_name": "Vacation Rentals",
+        "description": "Welcome to our riverside vacation rental, where nature's beauty serves as your backdrop for relaxation and adventure. Nestled along the tranquil banks of Tranquil Waterside, our charming cottage offers a serene retreat for those seeking respite from the hustle and bustle of everyday life. Step inside, and you'll be greeted by a warm and inviting interior, where rustic charm meets modern comfort in every detail. Our well-appointed accommodations feature all the amenities you need for a comfortable stay, from cozy furnishings and fully equipped kitchens to spacious living areas and private outdoor spaces. Spend your days exploring the natural wonders that surround you – whether it's fishing on the river, birdwatching from the comfort of your porch, or simply soaking in the peace and quiet of the countryside. With river access and outdoor amenities like BBQ grills and fishing gear provided, the possibilities for outdoor adventure are endless. Whether you're planning a romantic getaway for two or a fun-filled family vacation, our riverside rental offers the perfect setting for making memories that last a lifetime.",
+        "price": 150,
+        "status": "Rent",
+        "area": 1500,
+        "location": "Tranquil Waterside, Countryside",
+        "facilities": [
+            "River Access",
+            "Outdoor Patio",
+            "BBQ Grill",
+            "Fishing Gear"
+        ],
+        "rating": 4.6
+    },
+    {
+        "image_url": "https://i.ibb.co/ykSCZ9X/206478177.jpg",
+        "estate_title": "Urban Boutique Hotel",
+        "unique_id": "hotel789",
+        "segment_name": "Hotels",
+        "description": "Welcome to our urban boutique hotel, where contemporary luxury meets timeless charm in the heart of the city. Located in the vibrant downtown district, our hotel offers a stylish retreat for modern travelers seeking sophistication and comfort. Step into our sleek and sophisticated lobby, where chic design elements and personalized service set the tone for an unforgettable stay. Each of our thoughtfully designed rooms and suites exudes urban elegance, with upscale amenities and panoramic city views that create a sense of sanctuary amidst the bustling streets below. Indulge your palate with innovative cuisine at our rooftop restaurant, where creative dishes and craft cocktails await to tantalize your taste buds. Unwind with a dip in our rooftop pool, where sweeping city views provide the perfect backdrop for relaxation and rejuvenation. Whether you're here for business or pleasure, our boutique hotel offers a stylish oasis in the heart of the city.",
+        "price": 300,
+        "status": "Rent",
+        "area": 2500,
+        "location": "Downtown District, Urban City",
+        "facilities": [
+            "Rooftop Restaurant",
+            "Rooftop Pool",
+            "Fitness Center",
+            "Concierge Service"
+        ],
+        "rating": 4.8
+    },
+    {
+        "image_url": "https://i.ibb.co/YN3wPfF/tropical-island-gili-lankanfushi.jpg",
+        "estate_title": "Exotic Island Resort",
+        "unique_id": "resort789",
+        "segment_name": "Resorts",
+        "description": "Welcome to our exotic island resort, where paradise awaits amidst swaying palms and turquoise waters. Situated on the pristine shores of Azure Bay, our resort offers a luxurious escape for travelers seeking sun, sand, and serenity. Step into our tropical oasis and feel the stresses of everyday life melt away as you immerse yourself in the natural beauty that surrounds you. Our spacious villas and bungalows offer the perfect blend of comfort and style, with plush furnishings, modern amenities, and private terraces that overlook the shimmering sea. Indulge your senses with a variety of dining options, from gourmet cuisine at our beachfront restaurant to casual fare at our poolside bar. Unwind with a massage at our spa, where a menu of treatments awaits to soothe mind, body, and soul. Whether you're lounging on the beach, exploring the coral reefs, or simply soaking in the island vibes, our resort offers the ultimate tropical getaway.",
+        "price": 700,
+        "status": "Rent",
+        "area": 8000,
+        "location": "Azure Bay, Exotic Island",
+        "facilities": [
+            "Private Beach",
+            "Infinity Pool",
+            "Spa",
+            "Fine Dining"
+        ],
+        "rating": 4.9
+    },
+    {
+        "image_url": "https://i.ibb.co/vQNKgTq/Countryside-motel-1.jpg",
+        "estate_title": "Quaint Countryside Motel",
+        "unique_id": "motel101",
+        "segment_name": "Motels",
+        "description": "Welcome to our quaint countryside motel, where charm and hospitality await amidst rolling hills and pastoral landscapes. Nestled in the heart of the countryside, our motel offers a peaceful retreat for travelers seeking a taste of rural life. Step inside our cozy accommodations, where rustic charm meets modern comfort in every detail, from the quaint furnishings to the warm color palette inspired by the natural beauty that surrounds us. Wake up to the sounds of birdsong and the scent of fresh country air, then start your day with a hearty breakfast at our onsite diner, where homemade favorites are served with a smile. Spend your days exploring the picturesque countryside, with hiking trails, vineyards, and historic landmarks all within easy reach. In the evenings, relax and unwind on our outdoor patio, where you can sip a glass of wine and watch the sunset over the rolling hills. Whether you're here for a weekend getaway or an extended stay, our countryside motel offers a charming retreat that will leave you refreshed and rejuvenated.",
+        "price": 80,
+        "status": "Rent",
+        "area": 600,
+        "location": "Rolling Hills, Countryside",
+        "facilities": [
+            "Onsite Diner",
+            "Outdoor Patio",
+            "Scenic Views"
+        ],
+        "rating": 4.4
+    },
+    {
+        "image_url": "https://i.ibb.co/0c4SZ5J/mountainsideretreat-74.jpg",
+        "estate_title": "Mountain Cabin Retreat",
+        "unique_id": "cabin101",
+        "segment_name": "Vacation Rentals",
+        "description": "Welcome to our mountain cabin retreat, where nature's beauty surrounds you at every turn. Nestled in the heart of the rugged mountains, our cozy cabin offers a peaceful escape from the hustle and bustle of everyday life. Step inside and feel the warmth of the wood-burning fireplace, where crackling flames and cozy furnishings create a welcoming ambiance that invites you to relax and unwind. Our well-appointed cabin features all the comforts of home, from a fully equipped kitchen and spacious living area to a private deck where you can soak in the breathtaking views of the surrounding wilderness. Spend your days exploring the scenic hiking trails that wind through the mountains, fishing in crystal-clear streams, or simply lounging on the deck with a good book and a cup of coffee. In the evenings, gather around the fire pit under the starlit sky, where stories are shared and memories are made. Whether you're seeking adventure or tranquility, our mountain cabin retreat offers the perfect setting for your next getaway.",
+        "price": 120,
+        "status": "Rent",
+        "area": 1000,
+        "location": "Mountain Ridge, Wilderness",
+        "facilities": [
+            "Wood-Burning Fireplace",
+            "Private Deck",
+            "Scenic Views"
+        ],
+        "rating": 4.7
+    }
+]
