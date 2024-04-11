@@ -1,8 +1,14 @@
 import React from 'react';
 import { Helmet } from "react-helmet";
+import { useLoaderData } from 'react-router-dom';
+import Slider from '../Slider/Slider';
 
 
 const Home = () => {
+    const estates = useLoaderData();
+    console.log(estates)
+
+
     return (
         <div>
             <Helmet>
@@ -10,7 +16,8 @@ const Home = () => {
                 <meta name="description" content="Helmet application" />
             </Helmet>
             <div>
-                <h1>Home</h1>
+                <h1>Home: {estates.length}</h1>
+                <Slider></Slider>
             </div>
         </div>
     );

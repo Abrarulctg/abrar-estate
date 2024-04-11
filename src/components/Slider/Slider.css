@@ -1,0 +1,21 @@
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+    content: 'prev';
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 20px;
+    width: auto;
+    height: auto;
+}
+
+
+
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-next:after {
+    content: 'next';
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 20px;
+    width: auto;
+    height: auto;
+}
