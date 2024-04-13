@@ -1,12 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Helmet } from "react-helmet";
 import { useLoaderData } from 'react-router-dom';
 import Slider from '../Slider/Slider';
 import Estate from '../Estate/Estate';
+import ReviewPage from '../ReviewPage/ReviewPage';
 
 
 const Home = () => {
+
     const estates = useLoaderData();
+
     console.log(estates)
 
 
@@ -23,12 +26,13 @@ const Home = () => {
                 {/* <div className='absolute top-[55%] left-[15%] z-1'>
                     <h1 className='text-2xl lg:text-7xl font-bold text-[#002366] bg-[#ffffffcc] p-4 rounded-xl'>Welcome to Abrar Estate</h1>
                 </div> */}
-                <div className='grid grid-cols-1 lg:grid-cols-3 mt-10 gap-4 mx-4'>
+                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10 gap-4 mx-4'>
                     {/* <h1>{estates.length}</h1> */}
                     {
-                        estates.map(estate => <Estate estate={estate} key={estate.id}></Estate>)
+                        estates.map((estate, idx) => <Estate estate={estate} key={idx}></Estate>)
                     }
                 </div>
+                <ReviewPage></ReviewPage>
             </div>
         </div>
     );

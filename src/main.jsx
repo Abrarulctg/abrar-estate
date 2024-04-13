@@ -16,21 +16,25 @@ import Login from './components/Login/Login.jsx';
 import Register from './components/Register/Register.jsx';
 import UserProfile from './components/UserProfile/UserProfile.jsx';
 import AuthProvider from './components/AuthProvider/AuthProvider.jsx';
+import EstateDetails from './components/EstateDetails/EstateDetails.jsx';
+import ErrorPage from './components/ErrorPage/ErrorPage.jsx';
 
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: '/',
         element: <Home></Home>,
-        loader: () => fetch('abrar-estate.json')
+        loader: () => fetch('/abrar-estate.json')
       },
       {
         path: '/estates',
-        element: <Estates></Estates>
+        element: <Estates></Estates>,
+        loader: () => fetch('/abrar-estate.json')
       },
       {
         path: '/about',
@@ -55,6 +59,11 @@ const router = createBrowserRouter([
       {
         path: '/userProfile',
         element: <UserProfile></UserProfile>
+      },
+      {
+        path: '/estate/:id',
+        element: <EstateDetails></EstateDetails>,
+        loader: () => fetch('/abrar-estate.json')
       },
     ]
   },

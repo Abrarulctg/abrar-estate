@@ -21,8 +21,8 @@ const Slider = () => {
 
     return (
         <div className='max-w-7xl mx-auto'>
-            <div className=''>
-                <Swiper className=" w-full relative "
+            <div className='z-0'>
+                <Swiper className=" w-full relative"
                     // install Swiper modules
                     modules={[Navigation, Pagination, Scrollbar, A11y]}
                     spaceBetween={0}
