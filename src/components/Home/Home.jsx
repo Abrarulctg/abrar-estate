@@ -2,6 +2,7 @@ import React from 'react';
 import { Helmet } from "react-helmet";
 import { useLoaderData } from 'react-router-dom';
 import Slider from '../Slider/Slider';
+import Estate from '../Estate/Estate';
 
 
 const Home = () => {
@@ -16,8 +17,18 @@ const Home = () => {
                 <meta name="description" content="Helmet application" />
             </Helmet>
             <div>
-                <h1>Home: {estates.length}</h1>
-                <Slider></Slider>
+                <div className="">
+                    <Slider></Slider>
+                </div>
+                {/* <div className='absolute top-[55%] left-[15%] z-1'>
+                    <h1 className='text-2xl lg:text-7xl font-bold text-[#002366] bg-[#ffffffcc] p-4 rounded-xl'>Welcome to Abrar Estate</h1>
+                </div> */}
+                <div className='grid grid-cols-1 lg:grid-cols-3 mt-10 gap-4 mx-4'>
+                    {/* <h1>{estates.length}</h1> */}
+                    {
+                        estates.map(estate => <Estate estate={estate} key={estate.id}></Estate>)
+                    }
+                </div>
             </div>
         </div>
     );

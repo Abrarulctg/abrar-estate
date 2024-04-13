@@ -21,11 +21,11 @@ const Slider = () => {
 
     return (
         <div className='max-w-7xl mx-auto'>
-            <div>
-                <Swiper
+            <div className=''>
+                <Swiper className=" w-full relative "
                     // install Swiper modules
                     modules={[Navigation, Pagination, Scrollbar, A11y]}
-                    spaceBetween={50}
+                    spaceBetween={0}
                     slidesPerView={1}
                     navigation
                     pagination={{ clickable: true }}
@@ -33,17 +33,37 @@ const Slider = () => {
                     onSwiper={(swiper) => console.log(swiper)}
                     onSlideChange={() => console.log('slide change')}
                 >
-                    <SwiperSlide><img src={slide1} alt="" /></SwiperSlide>
-                    <SwiperSlide><img src={slide2} alt="" /></SwiperSlide>
-                    <SwiperSlide><img src={slide3} alt="" /></SwiperSlide>
-                    <SwiperSlide><img src={slide4} alt="" /></SwiperSlide>
-                    <SwiperSlide><img src={slide5} alt="" /></SwiperSlide>
-                    <SwiperSlide><img src={slide6} alt="" /></SwiperSlide>
-                    <SwiperSlide><img src={slide7} alt="" /></SwiperSlide>
-                    <SwiperSlide><img src={slide8} alt="" /></SwiperSlide>
+                    <SwiperSlide className=''>
+                        <img className='h-[250px] md:h-[350px] lg:h-auto w-full' src={slide1} alt="" />
+                        <div className="caption absolute text-2xl md:text-4xl lg:text-6xl font-bold text-[#002366] bg-[#ffffffcc] p-4 rounded-xl top-[35%] md:top-[38%] left-[15%] md:left-[18%] right-[15%] text-center">Welcome to Abrar Estate</div>
+                    </SwiperSlide>
+                    <SwiperSlide><img className="h-[250px] md:h-[350px] lg:h-auto w-full" src={slide2} alt="" />
+                        <div className="caption absolute text-2xl md:text-4xl lg:text-6xl font-bold text-[#002366] bg-[#ffffffcc] p-4 rounded-xl top-[35%] md:top-[38%] left-[15%] md:left-[18%] right-[15%] text-center">Welcome to Abrar Estate</div>
+
+                    </SwiperSlide>
+                    <SwiperSlide><img className="h-[250px] md:h-[350px] lg:h-auto w-full" src={slide3} alt="" />
+                        <div className="caption absolute text-2xl md:text-4xl lg:text-6xl font-bold text-[#002366] bg-[#ffffffcc] p-4 rounded-xl top-[35%] md:top-[38%] left-[15%] md:left-[18%] right-[15%] text-center">Welcome to Abrar Estate</div>
+                    </SwiperSlide>
+                    <SwiperSlide><img className="h-[250px] md:h-[350px] lg:h-auto w-full" src={slide4} alt="" />
+                        <div className="caption absolute text-2xl md:text-4xl lg:text-6xl font-bold text-[#002366] bg-[#ffffffcc] p-4 rounded-xl top-[35%] md:top-[38%] left-[15%] md:left-[18%] right-[15%] text-center">Welcome to Abrar Estate</div>
+                    </SwiperSlide>
+                    <SwiperSlide><img className="h-[250px] md:h-[350px] lg:h-auto w-full" src={slide5} alt="" />
+                        <div className="caption absolute text-2xl md:text-4xl lg:text-6xl font-bold text-[#002366] bg-[#ffffffcc] p-4 rounded-xl top-[35%] md:top-[38%] left-[15%] md:left-[18%] right-[15%] text-center">Welcome to Abrar Estate</div>
+                    </SwiperSlide>
+                    <SwiperSlide><img className="h-[250px] md:h-[350px] lg:h-auto w-full" src={slide6} alt="" />
+                        <div className="caption absolute text-2xl md:text-4xl lg:text-6xl font-bold text-[#002366] bg-[#ffffffcc] p-4 rounded-xl top-[35%] md:top-[38%] left-[15%] md:left-[18%] right-[15%] text-center">Welcome to Abrar Estate</div>
+                    </SwiperSlide>
+                    <SwiperSlide><img className="h-[250px] md:h-[350px] lg:h-auto w-full" src={slide7} alt="" />
+                        <div className="caption absolute text-2xl md:text-4xl lg:text-6xl font-bold text-[#002366] bg-[#ffffffcc] p-4 rounded-xl top-[35%] md:top-[38%] left-[15%] md:left-[18%] right-[15%] text-center">Welcome to Abrar Estate</div>
+                    </SwiperSlide>
+                    <SwiperSlide><img className="h-[250px] md:h-[350px] lg:h-auto w-full" src={slide8} alt="" />
+                        <div className="caption absolute text-2xl md:text-4xl lg:text-6xl font-bold text-[#002366] bg-[#ffffffcc] p-4 rounded-xl top-[35%] md:top-[38%] left-[15%] md:left-[18%] right-[15%] text-center">Welcome to Abrar Estate</div>
+                    </SwiperSlide>
 
                 </Swiper>
+
             </div>
+
         </div>
     );
 };

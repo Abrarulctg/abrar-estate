@@ -1,21 +1,33 @@
-.swiper-button-prev:after,
-.swiper-rtl .swiper-button-next:after {
+.swiper-button-prev:after {
     content: 'prev';
     background-color: #fff;
-    padding: 15px;
-    border-radius: 20px;
-    width: auto;
-    height: auto;
+    padding: 14px 18px 18px 16px;
+    border-radius: 50%;
+    width: 50px;
+    height: 45px;
+    font-size: 20px;
+    font-weight: 700;
 }
 
 
 
-.swiper-button-next:after,
-.swiper-rtl .swiper-button-next:after {
+.swiper-button-next:after {
     content: 'next';
     background-color: #fff;
-    padding: 15px;
-    border-radius: 20px;
-    width: auto;
-    height: auto;
+    padding: 14px 18px 18px 16px;
+    border-radius: 50%;
+    width: 50px;
+    height: 45px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+
+.swiper-pagination-clickable .swiper-pagination-bullet {
+    cursor: pointer;
+    background-color: #002366;
+    border: 3px solid white;
+    height: 20px;
+    width: 20px;
 }
