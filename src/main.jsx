@@ -18,6 +18,7 @@ import UserProfile from './components/UserProfile/UserProfile.jsx';
 import AuthProvider from './components/AuthProvider/AuthProvider.jsx';
 import EstateDetails from './components/EstateDetails/EstateDetails.jsx';
 import ErrorPage from './components/ErrorPage/ErrorPage.jsx';
+import AddReview from './components/ReviewPage/AddReview.jsx';
 
 
 const router = createBrowserRouter([
@@ -43,6 +44,10 @@ const router = createBrowserRouter([
       {
         path: '/contactUs',
         element: <ContactUs></ContactUs>
+      },
+      {
+        path: '/addReview',
+        element: <AddReview></AddReview>
       },
       {
         path: '/login',

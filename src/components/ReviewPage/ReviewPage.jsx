@@ -13,16 +13,16 @@ import { Link } from 'react-router-dom';
 const ReviewPage = () => {
 
     return (
-        <div className='max-w-6xl mx-auto flex flex-col lg:flex-row gap-2 bg-gray-200 rounded-xl'>
+        <div className='max-w-6xl mx-auto flex flex-col lg:flex-row gap-2 bg-gray-200 rounded-xl items-center'>
 
-            <div className='w-2/6 p-6 m-10 rounded text-center items-center my-auto'>
+            <div className='w-full lg:w-2/6 p-3 lg:p-6 m-2 lg:m-10 rounded text-center items-center my-auto mt-6'>
                 <h1 className='text-3xl  font-bold text-[#002366] my-3'>What our Customers Says</h1>
                 <Link to="/addReview" className='btn my-4  hover:bg-[#002366] text-[#002366] hover:text-white border-2 border-[#002366] bg-gray-200 font-bold'>Add Review</Link>
             </div>
 
 
             {/* React Bootstrap Carousel */}
-            <div className='w-4/6'>
+            <div className='w-full lg:w-4/6'>
                 <Carousel>
 
                     <div className='p-6 m-10 bg-white rounded'>
