@@ -4,6 +4,7 @@ import { useLoaderData } from 'react-router-dom';
 import Slider from '../Slider/Slider';
 import Estate from '../Estate/Estate';
 import ReviewPage from '../ReviewPage/ReviewPage';
+import OurSponsor from '../OutSponsor/OurSponsor';
 
 
 const Home = () => {
@@ -32,6 +33,7 @@ const Home = () => {
                         estates.map((estate, idx) => <Estate estate={estate} key={idx}></Estate>)
                     }
                 </div>
+                <OurSponsor></OurSponsor>
                 <ReviewPage></ReviewPage>
             </div>
         </div>

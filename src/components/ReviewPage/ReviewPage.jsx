@@ -13,7 +13,7 @@ import { Link } from 'react-router-dom';
 const ReviewPage = () => {
 
     return (
-        <div className='max-w-6xl mx-auto flex flex-col lg:flex-row gap-2 bg-gray-200 rounded-xl items-center'>
+        <div className='max-w-6xl mx-auto flex flex-col lg:flex-row gap-2 bg-gray-200 rounded-xl items-center my-8'>
 
             <div className='w-full lg:w-2/6 p-3 lg:p-6 m-2 lg:m-10 rounded text-center items-center my-auto mt-6'>
                 <h1 className='text-3xl  font-bold text-[#002366] my-3'>What our Customers Says</h1>
