@@ -1,0 +1,35 @@
+.carousel.carousel-slider .control-arrow {
+    top: 0;
+    color: #fff;
+    bottom: 0;
+    margin-top: auto;
+    padding: 5px;
+    height: 30px;
+    width: 30px;
+    font-size: 15px;
+    border-radius: 50%;
+    margin-bottom: auto;
+    background: #002366;
+}
+
+.carousel.carousel-slider .control-arrow:hover {
+    color: #fff;
+    background: #002366;
+}
+
+
+
+.carousel .control-dots .dot {
+    transition: opacity .25s ease-in;
+    opacity: .3;
+    filter: alpha(opacity=30);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9);
+    background: #002366;
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 8px;
+}

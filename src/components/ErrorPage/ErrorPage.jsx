@@ -18,7 +18,7 @@ const ErrorPage = () => {
                     <h1 className="text-5xl">Oops!</h1>
                     <p className='text-xl'>Error Code {error.status}!</p>
                     <p className="text-4xl font-bold">
-                        <i> Page {error.statusText || error.message}</i>
+                        <i> {error.statusText || error.message}</i>
                     </p>
 
                     <p className="text-3xl">{error.data}</p>
