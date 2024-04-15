@@ -44,7 +44,8 @@ const UserProfile = () => {
                 <h1 className="text-3xl text-center text-[#002366] font-bold mt-10">User Profile</h1>
 
                 <div className='flex flex-col lg:flex-row gap-4'>
-                    <div className='w-full md:w-full lg:w-2/4 md:mx-2 lg:mx-auto rounded-xl my-8 p-6 lg:py-20 bg-[#0024660b]'>
+                    <div className='w-full md:w-full lg:w-2/4 md:mx-2 lg:mx-auto rounded-xl my-8 p-6 lg:py-20 bg-[#0024660b]' data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500"
+                        data-aos-duration="1000">
                         <div className=' items-center'>
                             <img className='w-[200px] h-[200px] mx-auto rounded-full p-6' src={user?.photoURL || "https://i.ibb.co/XX4DwkF/default-user.webps"} alt="" />
                             <div className='w-full space-y-3 bg-white p-10 rounded-xl'>
@@ -63,7 +64,8 @@ const UserProfile = () => {
                         <h1 className="text-3xl text-center text-[#002366] font-bold my-8">Update Profile</h1>
 
                         <div className=' items-center'>
-                            <div className='w-full lg:w-full space-y-3 bg-white p-10 rounded-xl'>
+                            <div className='w-full lg:w-full space-y-3 bg-white p-10 rounded-xl' data-aos="flip-left" data-aos-anchor="#example-anchor" data-aos-offset="500"
+                                data-aos-duration="3000" >
                                 <form onSubmit={handleUpdate} className="card-body">
                                     <div className="form-control">
                                         <label className="label">

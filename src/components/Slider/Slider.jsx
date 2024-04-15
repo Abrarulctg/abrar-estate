@@ -16,6 +16,8 @@ import slide6 from '../../assets/slider6.jpg';
 import slide7 from '../../assets/slider7.jpg';
 import slide8 from '../../assets/slider8.jpg';
 import './Slider.css';
+import 'animate.css';
+
 
 const Slider = () => {
 
@@ -35,29 +37,29 @@ const Slider = () => {
                 >
                     <SwiperSlide className=''>
                         <img className='h-[250px] md:h-[350px] lg:h-auto w-full' src={slide1} alt="" />
-                        <div className="caption absolute text-2xl md:text-4xl lg:text-6xl font-bold text-[#002366] bg-[#ffffffcc] p-4 rounded-xl top-[35%] md:top-[38%] left-[15%] md:left-[18%] right-[15%] text-center">Welcome to Abrar Estate</div>
+                        <div className="animate__animated animate__bounceInLeft caption absolute text-2xl md:text-4xl lg:text-6xl font-bold text-[#002366] bg-[#ffffffcc] p-4 rounded-xl top-[35%] md:top-[38%] left-[15%] md:left-[18%] right-[15%] text-center">Welcome to Abrar Estate</div>
                     </SwiperSlide>
                     <SwiperSlide><img className="h-[250px] md:h-[350px] lg:h-auto w-full" src={slide2} alt="" />
-                        <div className="caption absolute text-2xl md:text-4xl lg:text-6xl font-bold text-[#002366] bg-[#ffffffcc] p-4 rounded-xl top-[35%] md:top-[38%] left-[15%] md:left-[18%] right-[15%] text-center">Welcome to Abrar Estate</div>
+                        <div className="animate__animated hover:animate__pulse caption absolute text-2xl md:text-4xl lg:text-6xl font-bold text-[#002366] bg-[#ffffffcc] p-4 rounded-xl top-[35%] md:top-[38%] left-[15%] md:left-[18%] right-[15%] text-center">Welcome to Abrar Estate</div>
 
                     </SwiperSlide>
                     <SwiperSlide><img className="h-[250px] md:h-[350px] lg:h-auto w-full" src={slide3} alt="" />
-                        <div className="caption absolute text-2xl md:text-4xl lg:text-6xl font-bold text-[#002366] bg-[#ffffffcc] p-4 rounded-xl top-[35%] md:top-[38%] left-[15%] md:left-[18%] right-[15%] text-center">Welcome to Abrar Estate</div>
+                        <div className="animate__animated animate__pulse caption absolute text-2xl md:text-4xl lg:text-6xl font-bold text-[#002366] bg-[#ffffffcc] p-4 rounded-xl top-[35%] md:top-[38%] left-[15%] md:left-[18%] right-[15%] text-center">Welcome to Abrar Estate</div>
                     </SwiperSlide>
                     <SwiperSlide><img className="h-[250px] md:h-[350px] lg:h-auto w-full" src={slide4} alt="" />
-                        <div className="caption absolute text-2xl md:text-4xl lg:text-6xl font-bold text-[#002366] bg-[#ffffffcc] p-4 rounded-xl top-[35%] md:top-[38%] left-[15%] md:left-[18%] right-[15%] text-center">Welcome to Abrar Estate</div>
+                        <div className="animate__animated animate__pulse caption absolute text-2xl md:text-4xl lg:text-6xl font-bold text-[#002366] bg-[#ffffffcc] p-4 rounded-xl top-[35%] md:top-[38%] left-[15%] md:left-[18%] right-[15%] text-center">Welcome to Abrar Estate</div>
                     </SwiperSlide>
                     <SwiperSlide><img className="h-[250px] md:h-[350px] lg:h-auto w-full" src={slide5} alt="" />
-                        <div className="caption absolute text-2xl md:text-4xl lg:text-6xl font-bold text-[#002366] bg-[#ffffffcc] p-4 rounded-xl top-[35%] md:top-[38%] left-[15%] md:left-[18%] right-[15%] text-center">Welcome to Abrar Estate</div>
+                        <div className="animate__animated animate__pulse caption absolute text-2xl md:text-4xl lg:text-6xl font-bold text-[#002366] bg-[#ffffffcc] p-4 rounded-xl top-[35%] md:top-[38%] left-[15%] md:left-[18%] right-[15%] text-center">Welcome to Abrar Estate</div>
                     </SwiperSlide>
                     <SwiperSlide><img className="h-[250px] md:h-[350px] lg:h-auto w-full" src={slide6} alt="" />
-                        <div className="caption absolute text-2xl md:text-4xl lg:text-6xl font-bold text-[#002366] bg-[#ffffffcc] p-4 rounded-xl top-[35%] md:top-[38%] left-[15%] md:left-[18%] right-[15%] text-center">Welcome to Abrar Estate</div>
+                        <div className="animate__animated animate__pulse caption absolute text-2xl md:text-4xl lg:text-6xl font-bold text-[#002366] bg-[#ffffffcc] p-4 rounded-xl top-[35%] md:top-[38%] left-[15%] md:left-[18%] right-[15%] text-center">Welcome to Abrar Estate</div>
                     </SwiperSlide>
                     <SwiperSlide><img className="h-[250px] md:h-[350px] lg:h-auto w-full" src={slide7} alt="" />
-                        <div className="caption absolute text-2xl md:text-4xl lg:text-6xl font-bold text-[#002366] bg-[#ffffffcc] p-4 rounded-xl top-[35%] md:top-[38%] left-[15%] md:left-[18%] right-[15%] text-center">Welcome to Abrar Estate</div>
+                        <div className="animate__animated animate__pulse caption absolute text-2xl md:text-4xl lg:text-6xl font-bold text-[#002366] bg-[#ffffffcc] p-4 rounded-xl top-[35%] md:top-[38%] left-[15%] md:left-[18%] right-[15%] text-center">Welcome to Abrar Estate</div>
                     </SwiperSlide>
                     <SwiperSlide><img className="h-[250px] md:h-[350px] lg:h-auto w-full" src={slide8} alt="" />
-                        <div className="caption absolute text-2xl md:text-4xl lg:text-6xl font-bold text-[#002366] bg-[#ffffffcc] p-4 rounded-xl top-[35%] md:top-[38%] left-[15%] md:left-[18%] right-[15%] text-center">Welcome to Abrar Estate</div>
+                        <div className="animate__animated animate__pulse caption absolute text-2xl md:text-4xl lg:text-6xl font-bold text-[#002366] bg-[#ffffffcc] p-4 rounded-xl top-[35%] md:top-[38%] left-[15%] md:left-[18%] right-[15%] text-center">Welcome to Abrar Estate</div>
                     </SwiperSlide>
 
                 </Swiper>
