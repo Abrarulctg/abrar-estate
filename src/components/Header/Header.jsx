@@ -21,7 +21,7 @@ const Header = () => {
         <li><NavLink className="mr-4 text-white navLink" to="/about">About</NavLink></li>
         <li><NavLink className="mr-4 text-white navLink" to="/contactUs">Contact Us</NavLink></li>
         <li><NavLink className="mr-4 text-white navLink" to="/userProfile">User Profile</NavLink></li>
-        <li><NavLink className="mr-4 text-white navLink" to="/updateProfile">Updte Profile</NavLink></li>
+        {/* <li><NavLink className="mr-4 text-white navLink" to="/updateProfile">Updte Profile</NavLink></li> */}
     </>
     return (
         <div className='bg-[#002366] '>
@@ -47,7 +47,7 @@ const Header = () => {
                     {
                         user ? <>
                             <div className="tooltip tooltip-bottom" data-tip={user?.displayName || "User"}>
-                                <img className='rounded-full w-14 mr-2 bg-white p-1' src={user?.photoURL || "https://i.ibb.co/XX4DwkF/default-user.webps"} alt="" />
+                                <img className='rounded-full w-14 h-14 mr-2 bg-white p-1' src={user?.photoURL || "https://i.ibb.co/XX4DwkF/default-user.webps"} alt="" />
                             </div>
 
                             <button className='btn ' onClick={handleSignOut}>Logout</button>

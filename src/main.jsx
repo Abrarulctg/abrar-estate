@@ -58,13 +58,13 @@ const router = createBrowserRouter([
         path: '/register',
         element: <Register></Register>
       },
-      {
-        path: '/updateProfile',
-        element: <PrivateRoute><UpdateProfile></UpdateProfile></PrivateRoute>
-      },
+      // {
+      //   path: '/updateProfile',
+      //   element: <PrivateRoute><UpdateProfile></UpdateProfile></PrivateRoute>
+      // },
       {
         path: '/userProfile',
-        element: <UserProfile></UserProfile>
+        element: <PrivateRoute><UserProfile></UserProfile></PrivateRoute>
       },
       {
         path: '/estate/:id',

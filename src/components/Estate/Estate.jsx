@@ -69,7 +69,7 @@ const Estate = ({ estate }) => {
             <p className='flex items-center'><FaLocationDot /> {location}</p>
             <div>
                 <p className='font-bold'>Facilities:</p>
-                {facilities.map(facility => <li className='ml-6'>{facility}</li>)}
+                {facilities.map((facility, idx) => <li className='ml-6' key={idx}>{facility}</li>)}
             </div>
             <div className='text-center'>
                 <Link to={`/estate/${unique_id}`} className='btn btn-success mt-6 text-white font-bold'>View Property</Link>

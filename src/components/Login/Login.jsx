@@ -1,15 +1,17 @@
 import React, { useContext, useState } from 'react';
 import { Helmet } from "react-helmet";
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation, useNavigate } from 'react-router-dom';
 import { FaFacebook, FaGithub, FaGoogle, FaRegEye, FaRegEyeSlash } from "react-icons/fa";
 import { AuthContext } from '../AuthProvider/AuthProvider';
 import { Bounce, ToastContainer, toast } from 'react-toastify';
 
 const Login = () => {
-    const { signInUser, signInWithGoogle } = useContext(AuthContext);
+    const { signInUser, signInWithGoogle, signInWithGithub } = useContext(AuthContext);
     const [showPassword, setShowPassword] = useState(false);
+    const navigate = useNavigate();
+    const location = useLocation();
 
-
+    const { from } = location.state || { from: { pathname: "/" } }; // Default to home page if no state is provided
 
     const successToast = () => toast.success('User Login Successful!', {
         position: "top-right",
@@ -45,9 +47,10 @@ const Login = () => {
 
         //Sign in user
         signInUser(email, password)
-            .then(result => {
-                console.log(result.user)
+            .then(() => {
+                // console.log(result.user)
                 successToast();
+                navigate(from)
 
             })
             .catch(err => {
@@ -55,17 +58,34 @@ const Login = () => {
             })
     }
 
+
+    // Google Sign in
     const handleGoogleLogin = () => {
         signInWithGoogle()
-            .then(res => {
+            .then(() => {
                 successToast()
-                console.log(res.user)
+                navigate(from)
+                // console.log(res.user)
             })
             .catch(err => {
                 errorToast(err.message);
-                console.log(err.message);
+                // console.log(err.message);
             });
     }
+
+
+    // Github Sign in
+    const handleGithubSignIn = () => {
+        signInWithGithub()
+            .then(result => {
+                successToast();
+                navigate(from)
+                // console.log(result.user);
+            })
+            .catch(err => errorToast(err.message))
+    }
+
+
     return (
         <div>
             <ToastContainer />
@@ -102,10 +122,11 @@ const Login = () => {
                         <p className='text-center mb-4'>New to Abrar Estate? Please <NavLink to="/register" className="font-[500] text-purple-950">Register</NavLink></p>
                         <button onClick={handleGoogleLogin} className='btn btn-ghost border border-[#002366] font-bold hover:text-white hover:bg-[#002366] mx-10 my-2'><FaGoogle />
                             Signin with Google</button>
+                        <button onClick={handleGithubSignIn} className='btn btn-ghost border border-[#002366] font-bold hover:text-white hover:bg-[#002366] mx-10 my-2'><FaGithub />
+                            Signin with GitHub</button>
                         <button className='btn btn-ghost border border-[#002366] font-bold hover:text-white hover:bg-[#002366] mx-10 my-2'><FaFacebook />
                             Signin with Facebook</button>
-                        <button className='btn btn-ghost border border-[#002366] font-bold hover:text-white hover:bg-[#002366] mx-10 my-2'><FaGithub />
-                            Signin with GitHub</button>
+
                     </div>
                 </div>
             </div>

@@ -1,9 +1,15 @@
 import React from 'react';
 import { FaStar } from 'react-icons/fa';
+import { Helmet } from "react-helmet";
 
 const AddReview = () => {
     return (
         <div className='max-w-6xl mx-auto'>
+
+            <Helmet>
+                <title>Abrar Estate | Add Review</title>
+                <meta name="description" content="Helmet application" />
+            </Helmet>
             <h1 className="text-5xl font-bold text-center my-16">Add Review</h1>
             <div className='border w-4/6 mx-auto p-8 bg-[#00246618] rounded-xl mb-10'>
                 <div className="flex justify-between items-center mb-4">
