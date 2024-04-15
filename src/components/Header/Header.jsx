@@ -1,9 +1,20 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { NavLink } from 'react-router-dom';
 import mainLogo from '../../assets/abrar-estate-main.png';
 import './Header.css';
+import { AuthContext } from '../AuthProvider/AuthProvider';
+import { FaRegUserCircle } from 'react-icons/fa';
 
 const Header = () => {
+    const { user, logOut } = useContext(AuthContext);
+
+
+    const handleSignOut = () => {
+        logOut()
+            .then(res => console.log("Sign Out Successful", res))
+            .catch(err => console.log(err))
+    }
+
     const navLinks = <>
         <li><NavLink className="mr-4 text-white navLink" to="/">Home</NavLink></li>
         <li><NavLink className="mr-4 text-white navLink" to="/estates">Estates</NavLink></li>
@@ -33,7 +44,16 @@ const Header = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <NavLink to="/login" className="btn">Login</NavLink>
+                    {
+                        user ? <>
+                            <div className="tooltip tooltip-bottom" data-tip={user?.displayName || "User"}>
+                                <img className='rounded-full w-14 mr-2 bg-white p-1' src={user?.photoURL || "https://i.ibb.co/XX4DwkF/default-user.webps"} alt="" />
+                            </div>
+
+                            <button className='btn ' onClick={handleSignOut}>Logout</button>
+                        </>
+                            : <NavLink to="/login" className="btn">Login</NavLink>
+                    }
                 </div>
             </div>
         </div>

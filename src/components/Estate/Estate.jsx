@@ -52,7 +52,7 @@ const Estate = ({ estate }) => {
         </>
     }
     return (
-        <div className='border-2 border-[#002366] mb-4 rounded-xl p-4 relative space-y-2 card-compact'>
+        <div className=' border-2 border-[#002366] mb-4 rounded-xl p-4 relative space-y-2 card-compact'>
             <img className='w-full rounded-xl' src={image_url} alt="" />
             <h1 className="text-2xl font-bold text-[#002366]">{estate_title}</h1>
             <p>{description.slice(0, 100)}</p>

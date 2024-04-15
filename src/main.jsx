@@ -19,6 +19,7 @@ import AuthProvider from './components/AuthProvider/AuthProvider.jsx';
 import EstateDetails from './components/EstateDetails/EstateDetails.jsx';
 import ErrorPage from './components/ErrorPage/ErrorPage.jsx';
 import AddReview from './components/ReviewPage/AddReview.jsx';
+import PrivateRoute from './components/PrivateRoute/PrivateRoute.jsx';
 
 
 const router = createBrowserRouter([
@@ -34,7 +35,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/estates',
-        element: <Estates></Estates>,
+        element: <PrivateRoute><Estates></Estates></PrivateRoute>,
         loader: () => fetch('/abrar-estate.json')
       },
       {
@@ -59,7 +60,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/updateProfile',
-        element: <UpdateProfile></UpdateProfile>
+        element: <PrivateRoute><UpdateProfile></UpdateProfile></PrivateRoute>
       },
       {
         path: '/userProfile',

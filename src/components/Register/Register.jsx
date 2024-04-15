@@ -7,7 +7,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { FaRegEye, FaRegEyeSlash } from 'react-icons/fa';
 
 const Register = () => {
-    const { createUser } = useContext(AuthContext);
+    const { createUser, user, updateUserNamePhoto } = useContext(AuthContext);
     const [showPassword, setShowPassword] = useState(false);
 
 
@@ -58,15 +58,30 @@ const Register = () => {
         }
 
         console.log(name, photo, email, password)
-        createUser(email, password)
+        createUser(email, password, name, photo)
             .then(res => {
                 console.log(res.user)
                 successToast();
+                //Updating/setting user name and photo url
+                updateUserNamePhoto(res.user, {
+                    displayName: name, photoURL: photo,
+                })
+                    .then(res => {
+                        console.log(res.message)
+                    })
+                    .catch(err => {
+                        errorToast(err.message);
+                        console.log(err.message)
+                    })
             })
             .catch(err => {
                 errorToast(err.message);
                 console.log(err.message)
             })
+        // console.log(user.photoURL);
+
+
+
     }
     return (
         <div>
@@ -108,7 +123,7 @@ const Register = () => {
                                 <span className="btn bg-transparent border-none absolute top-9 right-0" onClick={() => setShowPassword(!showPassword)}>{showPassword ? <FaRegEyeSlash className='text-2xl' /> : <FaRegEye className='text-2xl' />}</span>
                             </div>
                             <div className="form-control mt-6">
-                                <input className='btn btn-primary' type="submit" value="Login" />
+                                <input className='btn btn-primary' type="submit" value="Register" />
                             </div>
                         </form>
 
