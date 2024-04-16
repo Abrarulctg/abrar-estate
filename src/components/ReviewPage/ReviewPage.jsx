@@ -1,9 +1,9 @@
-import { FaUser } from 'react-icons/fa';
+import { FaStar, FaUser } from 'react-icons/fa';
 import reviewUser1 from '../../assets/r-user1.jpg';
 import reviewUser2 from '../../assets/r-user2.jpg';
 import './ReviewPage.css';
 // carusel utilities
-import React, { Component } from 'react';
+import React, { Component, useEffect, useState } from 'react';
 import ReactDOM from 'react-dom';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
@@ -11,6 +11,57 @@ import { Link } from 'react-router-dom';
 
 
 const ReviewPage = () => {
+    const [reviewData, setReviewData] = useState([]);
+
+    // const { id, name, photo, riview, rating } = reviewData;
+    useEffect(() => {
+        fetch('/review-data.json')
+            .then(res => res.json())
+            .then(data => {
+                // console.log(data);
+                setReviewData(data);
+            })
+    }, []);
+
+    let ratingStar;
+    if (reviewData.rating > 4) {
+        ratingStar = <>
+            <FaStar className='text-orange-400'></FaStar>
+            <FaStar className='text-orange-400'></FaStar>
+            <FaStar className='text-orange-400'></FaStar>
+            <FaStar className='text-orange-400'></FaStar>
+            <FaStar className='text-orange-400'></FaStar>
+        </>
+    }
+    else if (reviewData.rating > 3) {
+        ratingStar = <>
+            <FaStar className='text-orange-400'></FaStar>
+            <FaStar className='text-orange-400'></FaStar>
+            <FaStar className='text-orange-400'></FaStar>
+            <FaStar className='text-orange-400'></FaStar>
+            <FaStar className='text-gray-400'></FaStar>
+        </>
+    }
+    else if (reviewData.rating > 2) {
+        ratingStar = <>
+            <FaStar className='text-orange-400'></FaStar>
+            <FaStar className='text-orange-400'></FaStar>
+            <FaStar className='text-orange-400'></FaStar>
+            <FaStar className='text-gray-400'></FaStar>
+            <FaStar className='text-gray-400'></FaStar>
+        </>
+    }
+    else if (reviewData.rating <= 2) {
+        ratingStar = <>
+            <FaStar className='text-orange-400'></FaStar>
+            <FaStar className='text-orange-400'></FaStar>
+            <FaStar className='text-gray-400'></FaStar>
+            <FaStar className='text-gray-400'></FaStar>
+            <FaStar className='text-gray-400'></FaStar>
+        </>
+    }
+    // console.log(reviewData.rating)
+
 
     return (
         <div className='max-w-6xl mx-auto flex flex-col lg:flex-row gap-2 bg-gray-200 rounded-xl items-center my-8'>
@@ -23,50 +74,19 @@ const ReviewPage = () => {
 
             {/* React Bootstrap Carousel */}
             <div className='w-full lg:w-4/6'>
-                <Carousel>
+                <Carousel showThumbs={false}>
+                    {
+                        reviewData.map(review => <div key={review.id} className='p-6 m-10 bg-white rounded'>
+                            <div className='flex mx-auto justify-center h-[150px] w-[150px] border-4 border-[#002366] rounded-full'>
+                                <img src={review.photo} className='rounded-full' alt="" />
+                            </div>
+                            <p className='flex items-center'>Rating: <span className='flex ml-2'>{review.rating} / 5</span></p>
+                            <h1 className='text-2xl text-center font-bold text-[#002366] my-3'>{review.name}</h1>
+                            <h1 className="text-xl text-justify ">{review.review}</h1>
+                        </div>)
+                    }
 
-                    <div className='p-6 m-10 bg-white rounded'>
-                        <div className='flex mx-auto justify-center h-[150px] w-[150px] border-4 border-[#002366] rounded-full'>
-                            <img src={reviewUser1} className='rounded-full' alt="" />
-                        </div>
-                        <h1 className='text-2xl text-center font-bold text-[#002366] my-3'>Jubair Abrar</h1>
-                        <h1 className="text-xl text-justify ">Abrar Estate's commitment to hospitality shines through in every detail. The accommodations are luxurious, the amenities are first-class, and the staff are incredibly friendly and accommodating. Whether for a weekend getaway or an extended stay, Abrar Estate is the perfect choice for a memorable experience.</h1>
-                    </div>
-                    <div className='p-6 m-10 bg-white rounded'>
-                        <div className='flex mx-auto justify-center h-[150px] w-[150px] border-4 border-[#002366] rounded-full'>
-                            <img src={reviewUser2} className=' rounded-full' alt="" />
-                        </div>
-                        <h1 className='text-2xl text-center font-bold text-[#002366] my-3'>Jubair Abrar</h1>
-                        <h1 className="text-xl text-justify ">Abrar Estate's commitment to hospitality shines through in every detail. The accommodations are luxurious, the amenities are first-class, and the staff are incredibly friendly and accommodating. Whether for a weekend getaway or an extended stay, Abrar Estate is the perfect choice for a memorable experience.</h1>
-                    </div>
-                    <div className='p-6 m-10 bg-white rounded'>
-                        <div className='flex mx-auto justify-center h-[150px] w-[150px] border-4 border-[#002366] rounded-full'>
-                            <img src={reviewUser2} className=' rounded-full' alt="" />
-                        </div>
-                        <h1 className='text-2xl text-center font-bold text-[#002366] my-3'>Jubair Abrar</h1>
-                        <h1 className="text-xl text-justify ">Abrar Estate's commitment to hospitality shines through in every detail. The accommodations are luxurious, the amenities are first-class, and the staff are incredibly friendly and accommodating. Whether for a weekend getaway or an extended stay, Abrar Estate is the perfect choice for a memorable experience.</h1>
-                    </div>
-                    <div className='p-6 m-10 bg-white rounded'>
-                        <div className='flex mx-auto justify-center h-[150px] w-[150px] border-4 border-[#002366] rounded-full'>
-                            <img src={reviewUser2} className=' rounded-full' alt="" />
-                        </div>
-                        <h1 className='text-2xl text-center font-bold text-[#002366] my-3'>Jubair Abrar</h1>
-                        <h1 className="text-xl text-justify ">Abrar Estate's commitment to hospitality shines through in every detail. The accommodations are luxurious, the amenities are first-class, and the staff are incredibly friendly and accommodating. Whether for a weekend getaway or an extended stay, Abrar Estate is the perfect choice for a memorable experience.</h1>
-                    </div>
-                    <div className='p-6 m-10 bg-white rounded'>
-                        <div className='flex mx-auto justify-center h-[150px] w-[150px] border-4 border-[#002366] rounded-full'>
-                            <img src={reviewUser2} className=' rounded-full' alt="" />
-                        </div>
-                        <h1 className='text-2xl text-center font-bold text-[#002366] my-3'>Jubair Abrar</h1>
-                        <h1 className="text-xl text-justify ">Abrar Estate's commitment to hospitality shines through in every detail. The accommodations are luxurious, the amenities are first-class, and the staff are incredibly friendly and accommodating. Whether for a weekend getaway or an extended stay, Abrar Estate is the perfect choice for a memorable experience.</h1>
-                    </div>
-                    <div className='p-6 m-10 bg-white rounded'>
-                        <div className='flex mx-auto justify-center h-[150px] w-[150px] border-4 border-[#002366] rounded-full'>
-                            <img src={reviewUser1} className=' rounded-full' alt="" />
-                        </div>
-                        <h1 className='text-2xl text-center font-bold text-[#002366] my-3'>Jubair Abrar</h1>
-                        <h1 className="text-xl text-justify ">Abrar Estate's commitment to hospitality shines through in every detail. The accommodations are luxurious, the amenities are first-class, and the staff are incredibly friendly and accommodating. Whether for a weekend getaway or an extended stay, Abrar Estate is the perfect choice for a memorable experience.</h1>
-                    </div>
+
                 </Carousel>
             </div>
 

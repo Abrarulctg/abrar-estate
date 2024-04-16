@@ -1,13 +1,13 @@
-.form-control {
+.form-control-contact {
     background-color: #011c4e;
     color: #fff;
 }
 
-.form-control::placeholder {
+.form-control-contact::placeholder {
     color: #7484a1;
 }
 
-.form-control:focus {
+.form-control-contact:focus {
     background-color: #00153d;
     color: #fff;
 }
@@ -16,9 +16,6 @@
     height: 100px !important;
 }
 
-.address {
-    text-align: left;
-}
 
 
 .error {

@@ -44,7 +44,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/contactUs',
-        element: <ContactUs></ContactUs>
+        element: <PrivateRoute><ContactUs></ContactUs></PrivateRoute>
       },
       {
         path: '/addReview',
@@ -58,10 +58,6 @@ const router = createBrowserRouter([
         path: '/register',
         element: <Register></Register>
       },
-      // {
-      //   path: '/updateProfile',
-      //   element: <PrivateRoute><UpdateProfile></UpdateProfile></PrivateRoute>
-      // },
       {
         path: '/userProfile',
         element: <PrivateRoute><UserProfile></UserProfile></PrivateRoute>

@@ -7,10 +7,10 @@ const EstateDetails = () => {
     const estateId = useParams();
 
     const estates = useLoaderData();
-    console.log(estateId.id)
-    console.log(estates)
+    // console.log(estateId.id)
+    // console.log(estates)
     const selectedEstate = estates.find(est => est.unique_id === estateId.id)
-    console.log(selectedEstate)
+    // console.log(selectedEstate)
 
     const { unique_id, image_url, estate_title, segment_name, description, price, status, area, location, facilities, rating } = selectedEstate;
 
@@ -70,12 +70,8 @@ const EstateDetails = () => {
             </div>
             <div>
                 <p className='font-semibold underline mb-2'>Facilities: </p>
-                {facilities.map(facility => <li className='ml-6 mb-2'>{facility}</li>)}
+                {facilities.map((facility, idx) => <li className='ml-6 mb-2' key={idx}>{facility}</li>)}
             </div>
-
-
-
-
         </div>
     );
 };

@@ -1,0 +1,65 @@
+[
+    {
+        "id": 1,
+        "name": "Jubair Abrar",
+        "photo": "https://i.ibb.co/h8z71f6/r-user2.jpg",
+        "review": "My stay at Abrar Estate was nothing short of extraordinary. From the moment I arrived, I was greeted with warmth and hospitality. The accommodations were absolutely stunning, with luxurious amenities and breathtaking views. The dining experience was equally impressive, with exquisite cuisine that exceeded my expectations. The staff went above and beyond to ensure that every aspect of my stay was perfect. I can't wait to return to Abrar Estate for another unforgettable getaway.",
+        "rating": 5
+    },
+    {
+        "id": 2,
+        "name": "Michael Smith",
+        "photo": "https://i.ibb.co/xjTj1f4/r-user1.jpg",
+        "review": "I had the pleasure of staying at Abrar Estate for a weekend getaway, and it was truly a magical experience. The property is absolutely beautiful, surrounded by lush gardens and stunning architecture. The accommodations were spacious and elegantly furnished, providing the perfect retreat after a day of exploring the nearby attractions. The staff were incredibly attentive and went out of their way to ensure that my stay was memorable. I highly recommend Abrar Estate to anyone looking for a luxurious escape.",
+        "rating": 4
+    },
+    {
+        "id": 3,
+        "name": "Sophia Williams",
+        "photo": "https://i.ibb.co/0rhPD9C/download.png",
+        "review": "Abrar Estate exceeded all of my expectations. The attention to detail throughout the property is impeccable, from the stylish decor to the impeccable service. The dining options were exceptional, offering a variety of delicious dishes to suit every palate. I particularly enjoyed relaxing by the pool and indulging in spa treatments at the onsite wellness center. The staff were incredibly friendly and accommodating, making me feel right at home. I can't wait to return to Abrar Estate for another unforgettable stay.",
+        "rating": 3
+    },
+    {
+        "id": 4,
+        "name": "Daniel Brown",
+        "photo": "https://i.ibb.co/JHHzBPw/images-5.jpg",
+        "review": "My stay at Abrar Estate was absolutely delightful. The property is a true oasis of tranquility, surrounded by lush greenery and serene landscapes. The accommodations were elegant and comfortable, providing the perfect retreat after a day of exploring the nearby attractions. The dining options were superb, with a variety of culinary delights to choose from. The staff were incredibly attentive and went above and beyond to ensure that my stay was perfect. I can't wait to return to Abrar Estate for another relaxing getaway.",
+        "rating": 5
+    },
+    {
+        "id": 5,
+        "name": "Olivia Miller",
+        "photo": "https://i.ibb.co/gy3Lb2g/images-6.jpg",
+        "review": "I had an amazing experience at Abrar Estate. The property is absolutely stunning, with beautiful gardens and breathtaking views. The accommodations were luxurious and impeccably maintained, providing a cozy and inviting atmosphere. The dining experience was exceptional, with delicious cuisine served in a charming setting. The staff were friendly and attentive, making me feel welcomed from the moment I arrived. I would highly recommend Abrar Estate to anyone looking for a memorable and rejuvenating retreat.",
+        "rating": 4
+    },
+    {
+        "id": 6,
+        "name": "William Taylor",
+        "photo": "https://i.ibb.co/sy64Qwn/images-7.jpg",
+        "review": "Abrar Estate exceeded my expectations in every way. The property is simply breathtaking, with picturesque views and luxurious amenities. The accommodations were spacious and elegantly appointed, providing the perfect blend of comfort and sophistication. The dining options were exceptional, offering a diverse selection of dishes to suit every palate. The staff were professional, attentive, and went out of their way to ensure that my stay was unforgettable. I can't wait to return to Abrar Estate for another exceptional experience.",
+        "rating": 5
+    },
+    {
+        "id": 7,
+        "name": "Emma Davis",
+        "photo": "https://i.ibb.co/KGg1Jp2/images-8.jpg",
+        "review": "My stay at Abrar Estate was truly unforgettable. The property is a hidden gem, nestled in a tranquil setting with stunning views of the surrounding landscape. The accommodations were luxurious and meticulously designed, offering the perfect blend of comfort and sophistication. The dining experience was exceptional, with a diverse menu of delectable dishes prepared with locally sourced ingredients. The staff were attentive and gracious, ensuring that every aspect of my stay was perfect. I can't wait to return to Abrar Estate for another memorable getaway.",
+        "rating": 2
+    },
+    {
+        "id": 8,
+        "name": "Alexander Wilson",
+        "photo": "https://i.ibb.co/JrwF0gs/Russian-passport-photo.jpg",
+        "review": "I had an amazing time at Abrar Estate. The property is absolutely breathtaking, with lush gardens and stunning architecture. The accommodations were spacious and beautifully appointed, providing a serene and relaxing atmosphere. The dining options were fantastic, with delicious cuisine served in a picturesque setting. The staff were friendly, attentive, and went out of their way to ensure that my stay was enjoyable. I highly recommend Abrar Estate to anyone looking for a luxurious and rejuvenating retreat.",
+        "rating": 4
+    },
+    {
+        "id": 9,
+        "name": "Isabella Martinez",
+        "photo": "https://i.ibb.co/zV4bP22/images-9.jpg",
+        "review": "Abrar Estate is a true paradise. From the moment I arrived, I was blown away by the beauty of the property and the warmth of the staff. The accommodations were exquisite, with every detail carefully considered to ensure maximum comfort and luxury. The dining options were exceptional, with a diverse selection of dishes to satisfy every palate. The staff were attentive and accommodating, making me feel like royalty throughout my stay. I can't wait to return to Abrar Estate for another magical experience.",
+        "rating": 5
+    }
+]
