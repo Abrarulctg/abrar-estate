@@ -72,9 +72,10 @@ const UserProfile = () => {
                             <img className='w-[200px] h-[200px] mx-auto rounded-full p-6' src={user?.photoURL || "https://i.ibb.co/XX4DwkF/default-user.webps"} alt="" />
                             <div className='w-full space-y-3 bg-white p-10 rounded-xl'>
                                 <h1 className="text-xl font-semibold text-[#002366]"> Name : {user.displayName || user.email}</h1>
+                                <hr />
                                 <h1 className="text-xl font-semibold text-[#002366]">Email : {user.email}</h1>
-                                <p>Account Created on: {user.metadata.creationTime}</p>
-                                <p>Last SignIn Time : {user.metadata.lastSignInTime}</p>
+                                {/* <p>Account Created on: {user.metadata.creationTime}</p>
+                                <p>Last SignIn Time : {user.metadata.lastSignInTime}</p> */}
 
                             </div>
                         </div>
