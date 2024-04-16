@@ -16,7 +16,7 @@ const ErrorPage = () => {
                         <TbFaceIdError className='text-7xl ' />
                     </div>
                     <h1 className="text-5xl">Oops!</h1>
-                    <p className='text-xl'>Error Code {error.status}!</p>
+                    {error.status && <p className='text-xl'>Error Code {error.status}!</p>}
                     <p className="text-4xl font-bold">
                         <i> {error.statusText || error.message}</i>
                     </p>

@@ -2,6 +2,15 @@
     color: #fff !important;
 }
 
+.dropdown .dropdown-content {
+    position: absolute;
+    z-index: 9999;
+}
+
+.dropdown-content .navLink {
+    color: #002366 !important;
+}
+
 .menu li>*:not(ul, .menu-title, details, .btn):active,
 .menu li>*:not(ul, .menu-title, details, .btn).active,
 .menu li>details>summary:active {

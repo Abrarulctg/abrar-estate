@@ -6,7 +6,7 @@ import { AuthContext } from '../AuthProvider/AuthProvider';
 import { Bounce, ToastContainer, toast } from 'react-toastify';
 
 const Login = () => {
-    const { signInUser, signInWithGoogle, signInWithGithub } = useContext(AuthContext);
+    const { signInUser, signInWithGoogle, signInWithGithub, signInWithFacebook } = useContext(AuthContext);
     const [showPassword, setShowPassword] = useState(false);
     const navigate = useNavigate();
     const location = useLocation();
@@ -85,6 +85,17 @@ const Login = () => {
             .catch(err => errorToast(err.message))
     }
 
+    //Facebook Sign in
+    const handleFacebookLogin = () => {
+        signInWithFacebook()
+            .then(res => {
+                successToast();
+                navigate(from);
+            })
+            .catch(err => {
+                errorToast(err.message)
+            })
+    }
 
     return (
         <div>
@@ -124,7 +135,7 @@ const Login = () => {
                             Signin with Google</button>
                         <button onClick={handleGithubSignIn} className='btn btn-ghost border border-[#002366] font-bold hover:text-white hover:bg-[#002366] mx-10 my-2'><FaGithub />
                             Signin with GitHub</button>
-                        <button className='btn btn-ghost border border-[#002366] font-bold hover:text-white hover:bg-[#002366] mx-10 my-2'><FaFacebook />
+                        <button onClick={handleFacebookLogin} className='btn btn-ghost border border-[#002366] font-bold hover:text-white hover:bg-[#002366] mx-10 my-2'><FaFacebook />
                             Signin with Facebook</button>
 
                     </div>

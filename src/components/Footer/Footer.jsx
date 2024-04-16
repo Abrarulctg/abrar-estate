@@ -5,10 +5,12 @@ const Footer = () => {
         <div className='bg-[#002366] '>
             <footer className="footer mx-auto text-[#ffffff99] px-5 max-w-6xl">
                 <div className="flex flex-col lg:flex-row gap-5 mx-auto">
-                    <div className="lg:w-2/6 w-full ml-10">
+                    <div className="lg:w-2/6 w-full lg:ml-10">
                         <div className="py-8 lg:py-10 space-y-4 text-center lg:text-left">
-                            <img src={mainLogo} className='w-3/4' alt="" />
-                            <h1 className="font-bold text-white text-3xl">Get In Touch</h1>
+                            <div className='flex justify-center'>
+                                <img src={mainLogo} className='w-3/4' alt="" />
+                            </div>
+                            <h1 className="font-bold text-white text-3xl ">Get In Touch</h1>
                             <p>If you have any questions or feedback please send us an email. Or make us a call describing your
                                 requirements. </p>
                             <ul className="space-y-4">

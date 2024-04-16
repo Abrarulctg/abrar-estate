@@ -68,7 +68,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/estate/:id',
-        element: <EstateDetails></EstateDetails>,
+        element: <PrivateRoute><EstateDetails></EstateDetails></PrivateRoute>,
         loader: () => fetch('/abrar-estate.json')
       },
     ]

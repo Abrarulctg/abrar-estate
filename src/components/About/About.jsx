@@ -8,7 +8,7 @@ const About = () => {
                 <title>Abrar Estate | About</title>
                 <meta name="description" content="Helmet application" />
             </Helmet>
-            <div>
+            <div className="mx-3">
 
                 <div className="flex justify-center my-10">
                     <img className="w-96" src={aboutLogo} alt="" />
