@@ -80,8 +80,8 @@ const ReviewPage = () => {
                             <div className='flex mx-auto justify-center h-[150px] w-[150px] border-4 border-[#002366] rounded-full'>
                                 <img src={review.photo} className='rounded-full' alt="" />
                             </div>
-                            <p className='flex items-center'>Rating: <span className='flex ml-2'>{review.rating} / 5</span></p>
                             <h1 className='text-2xl text-center font-bold text-[#002366] my-3'>{review.name}</h1>
+                            <p className='flex items-center justify-center font-bold mb-3 text-[#0c7941]'>Rating: <span className='flex ml-2'>{review.rating} / 5</span></p>
                             <h1 className="text-xl text-justify ">{review.review}</h1>
                         </div>)
                     }
