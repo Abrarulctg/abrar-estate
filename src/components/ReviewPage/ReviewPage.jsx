@@ -23,43 +23,43 @@ const ReviewPage = () => {
             })
     }, []);
 
-    let ratingStar;
-    if (reviewData.rating > 4) {
-        ratingStar = <>
-            <FaStar className='text-orange-400'></FaStar>
-            <FaStar className='text-orange-400'></FaStar>
-            <FaStar className='text-orange-400'></FaStar>
-            <FaStar className='text-orange-400'></FaStar>
-            <FaStar className='text-orange-400'></FaStar>
-        </>
-    }
-    else if (reviewData.rating > 3) {
-        ratingStar = <>
-            <FaStar className='text-orange-400'></FaStar>
-            <FaStar className='text-orange-400'></FaStar>
-            <FaStar className='text-orange-400'></FaStar>
-            <FaStar className='text-orange-400'></FaStar>
-            <FaStar className='text-gray-400'></FaStar>
-        </>
-    }
-    else if (reviewData.rating > 2) {
-        ratingStar = <>
-            <FaStar className='text-orange-400'></FaStar>
-            <FaStar className='text-orange-400'></FaStar>
-            <FaStar className='text-orange-400'></FaStar>
-            <FaStar className='text-gray-400'></FaStar>
-            <FaStar className='text-gray-400'></FaStar>
-        </>
-    }
-    else if (reviewData.rating <= 2) {
-        ratingStar = <>
-            <FaStar className='text-orange-400'></FaStar>
-            <FaStar className='text-orange-400'></FaStar>
-            <FaStar className='text-gray-400'></FaStar>
-            <FaStar className='text-gray-400'></FaStar>
-            <FaStar className='text-gray-400'></FaStar>
-        </>
-    }
+    // let ratingStar;
+    // if (reviewData.rating > 4) {
+    //     ratingStar = <>
+    //         <FaStar className='text-orange-400'></FaStar>
+    //         <FaStar className='text-orange-400'></FaStar>
+    //         <FaStar className='text-orange-400'></FaStar>
+    //         <FaStar className='text-orange-400'></FaStar>
+    //         <FaStar className='text-orange-400'></FaStar>
+    //     </>
+    // }
+    // else if (reviewData.rating > 3) {
+    //     ratingStar = <>
+    //         <FaStar className='text-orange-400'></FaStar>
+    //         <FaStar className='text-orange-400'></FaStar>
+    //         <FaStar className='text-orange-400'></FaStar>
+    //         <FaStar className='text-orange-400'></FaStar>
+    //         <FaStar className='text-gray-400'></FaStar>
+    //     </>
+    // }
+    // else if (reviewData.rating > 2) {
+    //     ratingStar = <>
+    //         <FaStar className='text-orange-400'></FaStar>
+    //         <FaStar className='text-orange-400'></FaStar>
+    //         <FaStar className='text-orange-400'></FaStar>
+    //         <FaStar className='text-gray-400'></FaStar>
+    //         <FaStar className='text-gray-400'></FaStar>
+    //     </>
+    // }
+    // else if (reviewData.rating <= 2) {
+    //     ratingStar = <>
+    //         <FaStar className='text-orange-400'></FaStar>
+    //         <FaStar className='text-orange-400'></FaStar>
+    //         <FaStar className='text-gray-400'></FaStar>
+    //         <FaStar className='text-gray-400'></FaStar>
+    //         <FaStar className='text-gray-400'></FaStar>
+    //     </>
+    // }
     // console.log(reviewData.rating)
 
 

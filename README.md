@@ -19,15 +19,15 @@
 <b>Subtle Visual Enhancements:</b>Incorporating Animate.css to add subtle yet effective visual enhancements to various elements on the website, contributing to a modern and engaging design aesthetic.
 
 [Technologies Used](#technologies-used)
-a. React+Vite
-b. Firebase
-c. TailwindCSS
-d. DaisyUi
-e. React Router
-f. React Icons
-g. Carousel Slider
-h. imgdb for Image Hosting
-i. Netlify for hosting and more.
+* React+Vite
+* Firebase
+* TailwindCSS
+* DaisyUi
+* React Router
+* React Icons
+* Carousel Slider
+* imgdb for Image Hosting
+* Netlify for hosting and more.
 
 
 #  NPM package Used:

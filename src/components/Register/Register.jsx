@@ -1,13 +1,14 @@
 import React, { useContext, useState } from 'react';
 import { Helmet } from "react-helmet";
-import { NavLink } from 'react-router-dom';
+import { NavLink, Navigate, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../AuthProvider/AuthProvider';
 import { Bounce, ToastContainer, toast } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
 import { FaRegEye, FaRegEyeSlash } from 'react-icons/fa';
 
 const Register = () => {
-    const { createUser, user, updateUserNamePhoto } = useContext(AuthContext);
+    const navigate = useNavigate();
+    const { createUser, setUser, user, saveUserProfileOnRegister } = useContext(AuthContext);
     const [showPassword, setShowPassword] = useState(false);
 
 
@@ -36,7 +37,7 @@ const Register = () => {
 
     const handleRegister = e => {
         e.preventDefault();
-        console.log(e.currentTarget)
+        // console.log(e.currentTarget)
         const form = new FormData(e.currentTarget);
 
         const name = form.get('name');
@@ -57,26 +58,29 @@ const Register = () => {
             return;
         }
 
-        console.log(name, photo, email, password)
+        // console.log(name, photo, email, password)
         createUser(email, password, name, photo)
             .then(res => {
-                console.log(res.user)
-                successToast();
+                // console.log(res.user)
                 //Updating/setting user name and photo url
-                updateUserNamePhoto(res.user, {
-                    displayName: name, photoURL: photo,
-                })
-                    .then(res => {
-                        console.log(res.message)
+                saveUserProfileOnRegister(name, photo)
+                    .then(() => {
+                        setUser({ ...user, displayName: name, photoURL: photo })
+                        // setUser(res.user)
+                        successToast();
+                        setTimeout(() => {
+                            navigate("/");
+                        }, 1000);
+
                     })
                     .catch(err => {
                         errorToast(err.message);
-                        console.log(err.message)
+                        // console.log(err.message)
                     })
             })
             .catch(err => {
                 errorToast(err.message);
-                console.log(err.message)
+                // console.log(err.message)
             })
         // console.log(user.photoURL);
 

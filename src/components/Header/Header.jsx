@@ -46,8 +46,8 @@ const Header = () => {
                 <div className="navbar-end">
                     {
                         user ? <>
-                            <div className="tooltip tooltip-bottom" data-tip={user?.displayName || "User"}>
-                                <img className='rounded-full w-14 h-14 mr-2 bg-white p-1' src={user?.photoURL || "https://i.ibb.co/XX4DwkF/default-user.webps"} alt="" />
+                            <div className="tooltip tooltip-left " data-tip={user?.displayName || "User"}>
+                                <img className='rounded-full w-14 h-14 mr-2 bg-white p-1' src={user.photoURL || "https://i.ibb.co/XX4DwkF/default-user.webps"} alt="" />
                             </div>
                             <button className='btn ' onClick={handleSignOut}>Logout</button>
                         </>

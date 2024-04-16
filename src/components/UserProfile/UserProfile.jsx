@@ -17,6 +17,28 @@ const UserProfile = () => {
         setPhotoUrl(e.target.value);
     }
 
+    const successToast = () => toast.success('Congrats! Account updated Successfully!', {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+        transition: Bounce,
+    });
+    const errorToast = (errorMessage) => toast.error(errorMessage, {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+        transition: Bounce,
+    });
 
     //updating profile
     const handleUpdate = e => {
@@ -30,9 +52,9 @@ const UserProfile = () => {
         })
             .then(() => {
                 setUser({ ...user, displayName: name, photoURL: photoUrl })
-                console.log("Profile Updated")
+                successToast();
             })
-            .catch(error => console.log(error))
+            .catch(error => errorToast(error.message))
     }
     return (
         <div>

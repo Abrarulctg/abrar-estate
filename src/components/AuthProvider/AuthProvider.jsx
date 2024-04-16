@@ -56,8 +56,17 @@ const AuthProvider = ({ children }) => {
     }
 
     const updateUserNamePhoto = (displayName, photo) => {
-        return updateProfile(auth.user, displayName, photo);
+        return updateProfile(auth.currentUser, displayName, photo);
     }
+
+    // Save user Name & Photo URL on Register
+    const saveUserProfileOnRegister = (name, image) => {
+        return updateProfile(auth.currentUser, {
+            displayName: name,
+            photoURL: image
+        })
+    }
+
 
     const logOut = () => {
         setLoading(true);
@@ -74,6 +83,7 @@ const AuthProvider = ({ children }) => {
         signInWithGoogle,
         signInWithGithub,
         signInWithFacebook,
+        saveUserProfileOnRegister,
         logOut,
     }
     return (
