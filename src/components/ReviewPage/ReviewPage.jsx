@@ -76,13 +76,13 @@ const ReviewPage = () => {
             <div className='w-full lg:w-4/6'>
                 <Carousel showThumbs={false}>
                     {
-                        reviewData.map(review => <div key={review.id} className='p-6 m-10 bg-white rounded'>
+                        reviewData.map(review => <div key={review.id} className='px-10 py-4 my-10 mx-6 bg-white rounded'>
                             <div className='flex mx-auto justify-center h-[150px] w-[150px] border-4 border-[#002366] rounded-full'>
                                 <img src={review.photo} className='rounded-full' alt="" />
                             </div>
                             <h1 className='text-2xl text-center font-bold text-[#002366] my-3'>{review.name}</h1>
                             <p className='flex items-center justify-center font-bold mb-3 text-[#0c7941]'>Rating: <span className='flex ml-2'>{review.rating} / 5</span></p>
-                            <h1 className="text-xl text-justify ">{review.review}</h1>
+                            <h1 className=" text-justify ">{review.review}</h1>
                         </div>)
                     }
 

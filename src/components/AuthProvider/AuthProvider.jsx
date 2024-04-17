@@ -1,5 +1,5 @@
 import React, { createContext, useEffect, useState } from 'react';
-import { FacebookAuthProvider, GithubAuthProvider, GoogleAuthProvider, createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth";
+import { FacebookAuthProvider, GithubAuthProvider, GoogleAuthProvider, TwitterAuthProvider, createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth";
 import app from '../firebase/firebase.config';
 
 
@@ -55,6 +55,12 @@ const AuthProvider = ({ children }) => {
         return signInWithPopup(auth, facebookProvider);
     }
 
+    //Twitter Loin
+    const twitterProvider = new TwitterAuthProvider;
+    const signInWithTwitter = () => {
+        return signInWithPopup(auth, twitterProvider);
+    }
+
     const updateUserNamePhoto = (displayName, photo) => {
         return updateProfile(auth.currentUser, displayName, photo);
     }
@@ -83,6 +89,7 @@ const AuthProvider = ({ children }) => {
         signInWithGoogle,
         signInWithGithub,
         signInWithFacebook,
+        signInWithTwitter,
         saveUserProfileOnRegister,
         logOut,
     }

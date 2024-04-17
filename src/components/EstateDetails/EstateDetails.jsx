@@ -55,13 +55,13 @@ const EstateDetails = () => {
     return (
         <div className='max-w-6xl mx-auto space-y-4 p-4'>
             <img className='rounded-xl my-6 w-full h-[400px]' src={image_url} alt="" />
-            <div className='flex justify-between items-center'>
+            <div className='flex flex-col lg:flex-row justify-between items-center'>
                 <h1 className="text-5xl font-bold text-[#002366]">{estate_title}</h1>
                 <p className='flex items-center'>Rating: <span className='flex ml-2 items-center'>{ratingStar} ({rating}/5)</span></p>
             </div>
 
             <p>{description}</p>
-            <div className="flex justify-between">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5">
                 <p>Estate Category: <span className='font-bold'>{segment_name}</span></p>
                 <p className='flex items-center'>Price : <span className='flex items-center font-semibold'><FaDollarSign />{price}</span></p>
                 <p>Status: <span className='font-bold'>for {status}</span></p>

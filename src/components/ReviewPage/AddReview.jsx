@@ -12,7 +12,7 @@ const AddReview = () => {
             </Helmet>
             <h1 className="text-5xl font-bold text-center my-16">Add Review</h1>
             <div className='border w-4/6 mx-auto p-8 bg-[#00246618] rounded-xl mb-10'>
-                <div className="flex justify-between items-center mb-4">
+                <div className="flex flex-col lg:flex-row md:flex-row justify-between items-center mb-4">
                     <h2 className="text-3xl font-bold">Add a Review </h2>
                     <div className='flex flex-end text-2xl'>
                         <FaStar className='text-orange-400'></FaStar>

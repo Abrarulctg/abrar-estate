@@ -1,12 +1,12 @@
 import React, { useContext, useState } from 'react';
 import { Helmet } from "react-helmet";
 import { NavLink, useLocation, useNavigate } from 'react-router-dom';
-import { FaFacebook, FaGithub, FaGoogle, FaRegEye, FaRegEyeSlash } from "react-icons/fa";
+import { FaFacebook, FaGithub, FaGoogle, FaRegEye, FaRegEyeSlash, FaTwitter } from "react-icons/fa";
 import { AuthContext } from '../AuthProvider/AuthProvider';
 import { Bounce, ToastContainer, toast } from 'react-toastify';
 
 const Login = () => {
-    const { signInUser, signInWithGoogle, signInWithGithub, signInWithFacebook } = useContext(AuthContext);
+    const { signInUser, signInWithGoogle, signInWithGithub, signInWithFacebook, signInWithTwitter } = useContext(AuthContext);
     const [showPassword, setShowPassword] = useState(false);
     const navigate = useNavigate();
     const location = useLocation();
@@ -43,7 +43,7 @@ const Login = () => {
         const form = new FormData(e.currentTarget);
         const email = form.get('email');
         const password = form.get('password')
-        console.log(email, password);
+        // console.log(email, password);
 
         //Sign in user
         signInUser(email, password)
@@ -77,7 +77,7 @@ const Login = () => {
     // Github Sign in
     const handleGithubSignIn = () => {
         signInWithGithub()
-            .then(result => {
+            .then(() => {
                 successToast();
                 navigate(from)
                 // console.log(result.user);
@@ -88,9 +88,23 @@ const Login = () => {
     //Facebook Sign in
     const handleFacebookLogin = () => {
         signInWithFacebook()
-            .then(res => {
+            .then(() => {
                 successToast();
                 navigate(from);
+            })
+            .catch(err => {
+                errorToast(err.message)
+            })
+    }
+
+
+    //Handle Twitter Login
+    const handleTwitterLogin = () => {
+        signInWithTwitter()
+            .then((res) => {
+                successToast();
+                navigate(from);
+                console.log(res.user)
             })
             .catch(err => {
                 errorToast(err.message)
@@ -135,6 +149,8 @@ const Login = () => {
                             Signin with Google</button>
                         <button onClick={handleGithubSignIn} className='btn btn-ghost border border-[#002366] font-bold hover:text-white hover:bg-[#002366] mx-10 my-2'><FaGithub />
                             Signin with GitHub</button>
+                        <button onClick={handleTwitterLogin} className='btn btn-ghost border border-[#002366] font-bold hover:text-white hover:bg-[#002366] mx-10 my-2'><FaTwitter />
+                            Signin with Twitter</button>
                         <button onClick={handleFacebookLogin} className='btn btn-ghost border border-[#002366] font-bold hover:text-white hover:bg-[#002366] mx-10 my-2'><FaFacebook />
                             Signin with Facebook</button>
 

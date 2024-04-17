@@ -33,3 +33,12 @@
     display: inline-block;
     margin: 0 8px;
 }
+
+
+.carousel .control-prev.control-arrow {
+    left: 28px !important;
+}
+
+.carousel .control-next.control-arrow {
+    right: 28px !important;
+}
